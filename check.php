@@ -6,7 +6,7 @@
 			$res = file_get_contents("http://www.roblox.com/UserCheck/DoesUsernameExist?username=" . $filtered);
 
 			if ($res == '{"success":false}') {
-				file_put_contents("available.txt", $filtered, FILE_APPEND);
+				file_put_contents("available.txt", $filtered . "\n", FILE_APPEND);
 			}
 		}
 
