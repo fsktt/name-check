@@ -13,7 +13,7 @@
 		}
 
 		fclose($words);
-		echo "finished";
+		echo "finished!"; // if your webhost has a timeout page this won't show, just keep an eye on available.txt
 	} else {
 		error("error opening wordlist");
 	}
